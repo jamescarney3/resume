@@ -33,7 +33,6 @@ body{
   margin: auto;
   width: 8.5in;
   height: 11in;
-  border: 1px solid #ccc;
 }
 
 wrapper{
@@ -41,6 +40,7 @@ wrapper{
   padding: 1in;
   padding-top: .5in;
   font-family: sans-serif;
+  background: #eee;
 }
 
 /* HEADER */
@@ -51,8 +51,8 @@ header {
 
 header {
   display: block;
-  padding-bottom: 10px;
-  border-bottom: 3px solid #000;
+  padding-bottom: 5px;
+  border-bottom: 2px solid #000;
 }
 
 header name {
@@ -83,10 +83,12 @@ main > section {
 
 section > h2 {
   display: block;
-  font-size: 24px;
+  font-size: 14px;
   font-weight: bold;
   border-bottom: 1px solid #000;
   margin-bottom: 5px;
+  padding-bottom: 5px;
+  text-transform: uppercase;
 }
 
 /* PROJECTS */
@@ -100,20 +102,21 @@ section.projects > project > h3 {
   display: block;
   float: left;
   margin-bottom: 5px;
-  font-size: 18px;
+  font-size: 14px;
+  font-weight: bold;
 }
 
 section.projects > project > a {
   display: block;
   float: right;
-  font-size: 14px;
+  font-size: 12px;
   margin-left: 15px;
 }
 
 section.projects > project > description {
   display: block;
   clear: both;
-  font-size: 14px;
+  font-size: 12px;
   margin-left: 10px;
   font-style: italic;
 }
@@ -121,7 +124,7 @@ section.projects > project > description {
 section.projects > project > .features {
   display: block;
   clear: both;
-  font-size: 14px;
+  font-size: 12px;
   margin-left: 10px;
 }
 
@@ -140,6 +143,7 @@ section.skills > ul.techs{
   position: relative;
   display: block;
   text-align: center;
+  font-size: 14px;
 }
 
 section.skills > ul.techs > li {
@@ -160,21 +164,26 @@ section.education > institution > name {
   display: block;
   float: left;
   margin-bottom: 5px;
-  font-size: 18px;
+  font-size: 14px;
+  font-weight: bold;
 }
 
 section.education > institution > location {
   display: block;
   float: right;
-  font-size: 14px;
+  font-size: 12px;
 }
 
 section.education > institution > description {
   display: block;
   clear: both;
-  font-size: 14px;
+  font-size: 12px;
   margin-left: 10px;
   font-style: italic;
+}
+
+section.education > institution ul > li {
+  list-style: square inside;
 }
 
 /* WORK EXPERIENCE */
@@ -187,20 +196,21 @@ section.work > job {
 section.work > job > company {
   display: block;
   float: left;
-  font-size: 18px;
+  font-size: 14px;
   margin-bottom: 5px;
+  font-weight: bold;
 }
 
 section.work > job > location {
   display: block;
   float: right;
-  font-size: 14px;
+  font-size: 12px;
 }
 
 section.work > job > description {
   display: block;
   clear: both;
-  font-size: 14px;
+  font-size: 12px;
   margin-left: 10px;
   font-style: italic;
 }
@@ -208,7 +218,7 @@ section.work > job > description {
 section.work > job > ul.responsibilities {
   display: block;
   clear: both;
-  font-size: 14px;
+  font-size: 12px;
   margin-left: 10px;
 }
 
