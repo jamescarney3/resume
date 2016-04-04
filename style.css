@@ -146,8 +146,8 @@ section.skills > ul.techs{
   display: block;
   text-align: center;
   font-size: 14px;
-  padding-left: .5in;
-  padding-right: .5in;
+  padding-left: .2in;
+  padding-right: .2in;
 }
 
 section.skills > ul.techs > li {
