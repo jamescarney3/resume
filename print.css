@@ -23,13 +23,11 @@ button, article, footer, small, figure {
 }
 
 a{
-  color: #008;
+  color: #000;
 }
 
 body{
   display: block;
-  margin-top: 30px;
-  margin-bottom: 30px;
   margin: auto;
   width: 8.5in;
   height: 11in;
@@ -37,29 +35,23 @@ body{
 
 wrapper{
   display: block;
-  padding-left: 1.25in;
-  padding-right: 1.25in;
-  padding-top: .5in;
+  padding: 1in;
+  padding-top: 1in;
   font-family: sans-serif;
-  background: #eee;
 }
 
 /* HEADER */
 
 header {
   display: block;
-}
-
-header {
-  display: block;
   padding-bottom: 5px;
-  border-bottom: 2px solid #000;
+  border-bottom: 4px solid #000;
 }
 
 header name {
   display: block;
   float: left;
-  font-size: 36px;
+  font-size: 40px;
   font-weight: bold;
 }
 
@@ -74,65 +66,21 @@ header ul {
 
 main{
   display: block;
-  clear: both;
 }
 
 main > section {
   display: block;
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
 section > h2 {
   display: block;
-  font-size: 14px;
+  font-size: 24px;
   font-weight: bold;
-  border-bottom: 1px solid #000;
+  border-bottom: 2px solid #000;
   margin-bottom: 5px;
   padding-bottom: 5px;
   text-transform: uppercase;
-}
-
-/* PROJECTS */
-
-section.projects > project {
-  display: block;
-  margin-bottom: 15px;
-  padding-left: .5in;
-  padding-right: .5in;
-}
-
-section.projects > project > h3 {
-  display: block;
-  float: left;
-  margin-bottom: 5px;
-  font-size: 14px;
-  font-weight: bold;
-}
-
-section.projects > project > a {
-  display: block;
-  float: right;
-  font-size: 12px;
-  margin-left: 15px;
-}
-
-section.projects > project > description {
-  display: block;
-  clear: both;
-  font-size: 12px;
-  margin-left: 10px;
-  font-style: italic;
-}
-
-section.projects > project > .features {
-  display: block;
-  clear: both;
-  font-size: 12px;
-  margin-left: 10px;
-}
-
-section.projects > project > .features > li {
-  list-style: square inside;
 }
 
 /* SKILLS */
@@ -146,16 +94,17 @@ section.skills > ul.techs{
   position: relative;
   display: block;
   text-align: center;
-  font-size: 14px;
-  padding-left: .2in;
-  padding-right: .2in;
+  font-size: 16px;
+  padding-left: .5in;
+  padding-right: .5in;
 }
 
 section.skills > ul.techs > li {
   display: inline-block;
-  padding-left: 8px;
-  padding-right: 8px;
-  margin-bottom: 10px;
+  /* padding values keep top line spread out over width of container*/
+  padding-left: 10.218px;
+  padding-right: 10.218px;
+  margin-bottom: 8px;
 }
 
 /* EDUCATION */
@@ -171,26 +120,27 @@ section.education > institution > name {
   display: block;
   float: left;
   margin-bottom: 5px;
-  font-size: 14px;
+  font-size: 18px;
   font-weight: bold;
 }
 
 section.education > institution > location {
   display: block;
   float: right;
-  font-size: 12px;
+  font-size: 14px;
+  font-weight: bold;
 }
 
 section.education > institution > description {
   display: block;
   clear: both;
-  font-size: 12px;
-  margin-left: 10px;
+  font-size: 14px;
   font-style: italic;
 }
 
 section.education > institution ul > li {
   list-style: square inside;
+  font-size: 14px;
 }
 
 /* WORK EXPERIENCE */
@@ -205,7 +155,7 @@ section.work > job {
 section.work > job > company {
   display: block;
   float: left;
-  font-size: 14px;
+  font-size: 18px;
   margin-bottom: 5px;
   font-weight: bold;
 }
@@ -213,24 +163,18 @@ section.work > job > company {
 section.work > job > location {
   display: block;
   float: right;
-  font-size: 12px;
+  font-size: 14px;
+  font-weight: bold;
 }
 
 section.work > job > description {
   display: block;
   clear: both;
-  font-size: 12px;
-  margin-left: 10px;
+  font-size: 14px;
   font-style: italic;
-}
-
-section.work > job > ul.responsibilities {
-  display: block;
-  clear: both;
-  font-size: 12px;
-  margin-left: 10px;
 }
 
 section.work > job > ul.responsibilities > li {
   list-style: square inside;
+  font-size: 14px;
 }
