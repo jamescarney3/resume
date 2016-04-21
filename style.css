@@ -91,21 +91,11 @@ section.skills {
   clear: both;
 }
 
-section.skills > ul.techs{
-  position: relative;
+section.skills > p {
   display: block;
-  text-align: center;
-  font-size: 16px;
+  font-size: 14px;
   padding-left: .5in;
   padding-right: .5in;
-}
-
-section.skills > ul.techs > li {
-  display: inline-block;
-  /* padding values keep top line spread out over width of container*/
-  padding-left: 10.218px;
-  padding-right: 10.218px;
-  margin-bottom: 8px;
 }
 
 /* EDUCATION */
