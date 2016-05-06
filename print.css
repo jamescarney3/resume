@@ -59,7 +59,7 @@ wrapper{
   display: block;
   padding: .75in;
   padding-top: .75in;
-  font-family: 'Exo 2', sans-serif;
+  font-family: 'Exo', sans-serif;
 }
 
 /* HEADER */
@@ -124,8 +124,8 @@ section.skills > p {
 section.education > institution {
   display: block;
   margin-bottom: 15px;
-  padding-left: .5in;
-  padding-right: .5in;
+  padding-left: .25in;
+  padding-right: .25in;
 }
 
 section.education > institution > name {
@@ -160,8 +160,8 @@ section.education > institution ul > li {
 section.work > job {
   display: block;
   margin-bottom: 15px;
-  padding-left: .5in;
-  padding-right: .5in;
+  padding-left: .25in;
+  padding-right: .25in;
 }
 
 section.work > job > company {

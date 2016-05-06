@@ -22,7 +22,7 @@ button, article, footer, small, figure {
   clear: both;
 }
 
-a{
+a {
   color: #005;
 }
 
@@ -34,7 +34,7 @@ a{
   display: none;
 }*/
 
-body{
+body {
   display: block;
   margin: auto;
   width: 8.5in;
@@ -44,7 +44,7 @@ body{
 wrapper {
   display: block;
   padding: .8in;
-  font-family: 'Exo 2', sans-serif;
+  font-family: 'Exo', sans-serif;
   background: #eee;
 }
 
@@ -72,7 +72,7 @@ header ul {
 
 /* MAIN */
 
-main{
+main {
   display: block;
 }
 
@@ -110,8 +110,8 @@ section.skills > p {
 section.education > institution {
   display: block;
   margin-bottom: 15px;
-  padding-left: .5in;
-  padding-right: .5in;
+  padding-left: .25in;
+  padding-right: .25in;
 }
 
 section.education > institution > name {
@@ -146,8 +146,8 @@ section.education > institution ul > li {
 section.work > job {
   display: block;
   margin-bottom: 15px;
-  padding-left: .5in;
-  padding-right: .5in;
+  padding-left: .25in;
+  padding-right: .25in;
 }
 
 section.work > job > company {
