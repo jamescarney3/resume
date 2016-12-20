@@ -22,11 +22,15 @@ button, article, footer, small, figure {
   clear: both;
 }
 
-a{
-  color: #006;
+a {
+  color: #000;
 }
 
-body{
+.link-container {
+  display: none;
+}
+
+body {
   display: block;
   margin: auto;
   width: 8.5in;

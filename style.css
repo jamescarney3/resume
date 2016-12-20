@@ -23,8 +23,16 @@ button, article, footer, small, figure {
 }
 
 a{
-  color: #008;
+  color: #005;
 }
+
+.print-only {
+  display: none;
+}
+
+/*.link-container {
+  display: none;
+}*/
 
 body{
   display: block;
