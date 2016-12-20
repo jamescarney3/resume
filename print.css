@@ -22,13 +22,31 @@ button, article, footer, small, figure {
   clear: both;
 }
 
-a {
+/* styling for print-only, non-linked version */
+
+/*a {
   color: #000;
 }
 
 .link-container {
   display: none;
+}*/
+
+/* end print-only styling */
+
+
+
+/* uncomment the following to save an electronic copy */
+
+ a{
+  color: #005;
 }
+
+.print-only {
+  display: none;
+}
+
+/* end electronic-only styling */
 
 body {
   display: block;
