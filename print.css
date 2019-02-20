@@ -24,13 +24,13 @@ button, article, footer, small, figure {
 
 /* styling for print-only, non-linked version */
 
-/*a {
+/* a {
   color: #000;
 }
 
 .link-container {
   display: none;
-}*/
+} */
 
 /* end print-only styling */
 
@@ -38,7 +38,7 @@ button, article, footer, small, figure {
 
 /* uncomment the following to save an electronic copy */
 
- a{
+a {
   color: #005;
 }
 
@@ -57,8 +57,8 @@ body {
 
 wrapper{
   display: block;
-  padding: 1in;
-  padding-top: 1in;
+  padding: .75in;
+  padding-top: .75in;
   font-family: sans-serif;
 }
 

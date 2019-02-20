@@ -41,10 +41,9 @@ body{
   height: 11in;
 }
 
-wrapper{
+wrapper {
   display: block;
-  padding: 1in;
-  padding-top: 1in;
+  padding: .8in;
   font-family: sans-serif;
   background: #eee;
 }
@@ -53,7 +52,7 @@ wrapper{
 
 header {
   display: block;
-  padding-bottom: 5px;
+  padding-bottom: 10px;
   border-bottom: 4px solid #000;
 }
 
@@ -67,8 +66,8 @@ header name {
 header ul {
   display: block;
   float: right;
-  font-size: 12px;
-  margin-left: 12px;
+  font-size: 14px;
+  margin-left: 14px;
 }
 
 /* MAIN */
@@ -87,14 +86,14 @@ section > h2 {
   font-size: 24px;
   font-weight: bold;
   border-bottom: 2px solid #000;
-  margin-bottom: 5px;
-  padding-bottom: 5px;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
   text-transform: uppercase;
 }
 
 /* SKILLS */
 
-section.skills {
+/* section.skills {
   display: block;
   clear: both;
 }
@@ -104,7 +103,7 @@ section.skills > p {
   font-size: 14px;
   padding-left: .5in;
   padding-right: .5in;
-}
+} */
 
 /* EDUCATION */
 
@@ -155,7 +154,6 @@ section.work > job > company {
   display: block;
   float: left;
   font-size: 18px;
-  margin-bottom: 5px;
   font-weight: bold;
 }
 
@@ -171,9 +169,11 @@ section.work > job > description {
   clear: both;
   font-size: 14px;
   font-style: italic;
+  margin-bottom: 5px;
 }
 
 section.work > job > ul.responsibilities > li {
-  list-style: square inside;
+  list-style: square;
   font-size: 14px;
+  margin-left: 16px;
 }
