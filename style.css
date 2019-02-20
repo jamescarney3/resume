@@ -44,7 +44,7 @@ body{
 wrapper {
   display: block;
   padding: .8in;
-  font-family: sans-serif;
+  font-family: 'Exo 2', sans-serif;
   background: #eee;
 }
 
