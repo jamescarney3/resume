@@ -22,6 +22,8 @@ button, article, footer, small, figure {
   clear: both;
 }
 
+/* styling for print-only, non-linked version */
+
 a {
   color: #005;
 }
@@ -29,6 +31,9 @@ a {
 .print-only {
   display: none;
 }
+
+/* end print-only styling */
+
 
 /*.link-container {
   display: none;
@@ -53,21 +58,21 @@ wrapper {
 header {
   display: block;
   padding-bottom: 10px;
-  border-bottom: 4px solid #000;
+  border-bottom: 2px solid #000;
 }
 
 header name {
   display: block;
   float: left;
-  font-size: 40px;
+  font-size: 32px;
   font-weight: bold;
 }
 
 header ul {
   display: block;
   float: right;
-  font-size: 14px;
-  margin-left: 14px;
+  font-size: 12px;
+  margin-left: 12px;
 }
 
 /* MAIN */
@@ -83,27 +88,13 @@ main > section {
 
 section > h2 {
   display: block;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: bold;
-  border-bottom: 2px solid #000;
+  border-bottom: 1px solid #000;
   margin-bottom: 10px;
   padding-bottom: 10px;
   text-transform: uppercase;
 }
-
-/* SKILLS */
-
-/* section.skills {
-  display: block;
-  clear: both;
-}
-
-section.skills > p {
-  display: block;
-  font-size: 14px;
-  padding-left: .5in;
-  padding-right: .5in;
-} */
 
 /* EDUCATION */
 
@@ -118,14 +109,14 @@ section.education > institution > name {
   display: block;
   float: left;
   margin-bottom: 5px;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: bold;
 }
 
 section.education > institution > location {
   display: block;
   float: right;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: bold;
 }
 
@@ -138,7 +129,7 @@ section.education > institution > description {
 
 section.education > institution ul > li {
   list-style: square inside;
-  font-size: 14px;
+  font-size: 12px;
 }
 
 /* WORK EXPERIENCE */
@@ -153,14 +144,14 @@ section.work > job {
 section.work > job > company {
   display: block;
   float: left;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: bold;
 }
 
 section.work > job > location {
   display: block;
   float: right;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: bold;
 }
 
@@ -174,6 +165,6 @@ section.work > job > description {
 
 section.work > job > ul.responsibilities > li {
   list-style: square;
-  font-size: 14px;
+  font-size: 12px;
   margin-left: 16px;
 }
