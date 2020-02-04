@@ -32,12 +32,16 @@ a {
   display: none;
 }
 
-/* end print-only styling */
+/*  styling for hard copies; uncomment for paper versions */
+/* @media print {
+  .print-only {
+    display: block;
+  }
 
-
-/*.link-container {
-  display: none;
-}*/
+  .link-container {
+    display: none;S
+  }
+} */
 
 body {
   display: block;
@@ -161,6 +165,10 @@ section.work > job > description {
   font-size: 14px;
   font-style: italic;
   margin-bottom: 5px;
+}
+
+section.work > job > project {
+  font-size: 14px;
 }
 
 section.work > job > ul.responsibilities > li {
