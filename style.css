@@ -52,7 +52,7 @@ body {
 
 wrapper {
   display: block;
-  padding: .8in;
+  padding: .5in;
   font-family: 'Exo', sans-serif;
   background: #eee;
 }
@@ -95,8 +95,8 @@ section > h2 {
   font-size: 20px;
   font-weight: bold;
   border-bottom: 1px solid #000;
-  margin-bottom: 10px;
-  padding-bottom: 10px;
+  margin-bottom: 5px;
+  padding-bottom: 5px;
   text-transform: uppercase;
 }
 
@@ -145,6 +145,10 @@ section.work > job {
   padding-right: .25in;
 }
 
+section.work > job:last-child {
+  margin-bottom: 0;
+}
+
 section.work > job > company {
   display: block;
   float: left;
@@ -175,4 +179,22 @@ section.work > job > ul.responsibilities > li {
   list-style: square;
   font-size: 12px;
   margin-left: 16px;
+}
+
+/* PROJECTS */
+
+section.projects > project {
+  display: block;
+  margin-bottom: 15px;
+  padding-left: .25in;
+  padding-right: .25in;
+}
+
+section.projects > project > .project-title {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+section.projects > project > .project-description {
+  font-size: 12px;
 }
