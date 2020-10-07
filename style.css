@@ -16,6 +16,7 @@ button, article, footer, small, figure {
   text-decoration: none;
 }
 
+/* just a clear fix here */
 .group:after {
   content: '';
   display: block;
@@ -43,18 +44,21 @@ a {
   }
 } */
 
-body {
-  display: block;
+.page-boundary {
   margin: auto;
   width: 8.5in;
   height: 11in;
+  overflow: hidden;
+  background: #eee;
 }
 
-wrapper {
-  display: block;
-  padding: .5in;
+/* this is the page */
+.wrapper {
+  height: 9.5in;
+  width: 7in;
+  margin: .75in;
+  overflow: hidden;
   font-family: 'Exo', sans-serif;
-  background: #eee;
 }
 
 /* HEADER */
@@ -65,7 +69,7 @@ header {
   border-bottom: 2px solid #000;
 }
 
-header name {
+header .name {
   display: block;
   float: left;
   font-size: 32px;
@@ -87,12 +91,12 @@ main {
 
 main > section {
   display: block;
-  margin-top: 20px;
+  margin-top: 15px;
 }
 
 section > h2 {
   display: block;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: bold;
   border-bottom: 1px solid #000;
   margin-bottom: 5px;
@@ -102,14 +106,12 @@ section > h2 {
 
 /* EDUCATION */
 
-section.education > institution {
+section.education > .institution {
   display: block;
-  margin-bottom: 15px;
-  padding-left: .25in;
-  padding-right: .25in;
+  margin-bottom: 10px;
 }
 
-section.education > institution > name {
+section.education > .institution > .name {
   display: block;
   float: left;
   margin-bottom: 5px;
@@ -117,84 +119,114 @@ section.education > institution > name {
   font-weight: bold;
 }
 
-section.education > institution > location {
-  display: block;
+section.education .institution .right-col {
   float: right;
-  font-size: 12px;
-  font-weight: bold;
+  text-align: right;
 }
 
-section.education > institution > description {
-  display: block;
-  clear: both;
+section.education .institution .duration {
+  font-size: 12px;
+}
+
+section.education > .institution .location {
+  font-size: 12px;
+}
+
+section.education > .institution > .description {
+  float: left;
+  margin-left: 10px;
+  padding-top: 2px;
   font-size: 14px;
   font-style: italic;
 }
 
-section.education > institution ul > li {
+section.education > .institution ul > li {
   list-style: square inside;
   font-size: 12px;
 }
 
 /* WORK EXPERIENCE */
 
-section.work > job {
+section.work > .job {
   display: block;
-  margin-bottom: 15px;
-  padding-left: .25in;
-  padding-right: .25in;
+  margin-bottom: 10px;
 }
 
-section.work > job:last-child {
+section.work > .job:last-child {
   margin-bottom: 0;
 }
 
-section.work > job > company {
-  display: block;
+section.work > .job .left-col {
+  float: left;
+}
+
+section.work > .job .right-col {
+  text-align: right;
+  float: right;
+}
+
+section.work > .job .employer {
   float: left;
   font-size: 16px;
   font-weight: bold;
 }
 
-section.work > job > location {
-  display: block;
-  float: right;
+section.work > .job .location {
   font-size: 12px;
-  font-weight: bold;
 }
 
-section.work > job > description {
-  display: block;
-  clear: both;
+section.work > .job .description {
+  float: left;
+  margin-left: 10px;
+  padding-top: 2px;
   font-size: 14px;
   font-style: italic;
-  margin-bottom: 5px;
 }
 
-section.work > job > project {
+section.work > .job .duration {
+  font-size: 12px;
+}
+
+section.work > .job .project {
+  clear: left;
   font-size: 14px;
 }
 
-section.work > job > ul.responsibilities > li {
+section.work > .job > ul.responsibilities > li {
+  clear: left;
   list-style: square;
   font-size: 12px;
   margin-left: 16px;
 }
 
-/* PROJECTS */
+/* TECHNOLOGIES */
 
-section.projects > project {
-  display: block;
-  margin-bottom: 15px;
-  padding-left: .25in;
-  padding-right: .25in;
+section.technologies .technology {
+  font-size: 14px;
+  display: inline;
 }
 
-section.projects > project > .project-title {
+
+section.technologies .technologies-list {
+  text-align: center;
+}
+
+section.technologies .technology:not(:first-child):before {
+  content: '• ';
+}
+
+/* PROJECTS */
+
+section.projects > .project {
+  display: block;
+  margin-bottom: 15px;
+}
+
+section.projects > .project > .project-title {
   font-size: 16px;
   font-weight: bold;
 }
 
-section.projects > project > .project-description {
+section.projects > .project > .project-description {
   font-size: 12px;
 }
