@@ -54,9 +54,9 @@ a {
 
 /* this is the page */
 .wrapper {
-  height: 9.6in;
-  width: 7in;
-  margin: .75in;
+  /* height: 9.6in; */
+  /* width: 7in; */
+  margin: .65in;
   overflow: hidden;
   font-family: 'Exo', sans-serif;
 }
@@ -225,8 +225,24 @@ section.projects > .project {
 section.projects > .project > .project-title {
   font-size: 16px;
   font-weight: bold;
+  float: left;
 }
 
 section.projects > .project > .project-description {
   font-size: 12px;
+  clear: both;
+}
+
+section.projects > .project .project-link {
+  font-size: 12px;
+}
+
+section.projects > .project .link-container {
+  float: left;
+  margin-left: 1em;
+}
+
+section.projects > .project .print-only {
+  float: left;
+  margin-left: 1em;
 }
