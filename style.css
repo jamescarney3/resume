@@ -56,7 +56,7 @@ a {
 .wrapper {
   /* height: 9.6in; */
   /* width: 7in; */
-  margin: .65in;
+  margin: .85in;
   overflow: hidden;
   font-family: 'Exo', sans-serif;
 }
@@ -202,7 +202,7 @@ section.work > .job > ul.responsibilities > li {
 /* TECHNOLOGIES */
 
 section.technologies .technology {
-  font-size: 14px;
+  font-size: 12px;
   display: inline;
 }
 
