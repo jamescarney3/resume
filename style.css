@@ -1,7 +1,29 @@
-html, body, header, nav, h1, a, ul, li,
-strong, main, section, img, div, h2, h3, p,
-form, fieldset, label, input, textarea,
-button, article, footer, small, figure {
+html,
+body,
+header,
+nav,
+h1,
+a,
+ul,
+li,
+strong,
+main,
+section,
+img,
+div,
+h2,
+h3,
+p,
+form,
+fieldset,
+label,
+input,
+textarea,
+button,
+article,
+footer,
+small,
+figure {
   margin: 0;
   padding: 0;
   outline: 0;
@@ -18,9 +40,14 @@ button, article, footer, small, figure {
 
 /* just a clear fix here */
 .group:after {
-  content: '';
+  content: "";
   display: block;
   clear: both;
+}
+
+html {
+  background: #eee;
+  overflow: scroll;
 }
 
 /* styling for print-only, non-linked version */
@@ -29,73 +56,68 @@ a {
   color: #005;
 }
 
-.print-only {
+.print-only-link {
   display: none;
 }
 
-/*  styling for hard copies; uncomment for paper versions */
-/* @media print {
-  .print-only {
-    display: block;
-  }
-
-  .link-container {
-    display: none;S
-  }
-} */
-
-.page-boundary {
-  margin: auto;
-  width: 8.5in;
-  height: 11in;
-  overflow: hidden;
-  background: #eee;
+.print-only-link {
+  display: none;
 }
 
-/* this is the page */
-.wrapper {
-  /* height: 9.6in; */
-  /* width: 7in; */
-  margin: .85in;
+@media print {
+  .print-only-link {
+    display: inline;
+  }
+
+  a {
+    display: none;
+  }
+}
+
+body {
+  width: 8.5in;
+  height: 11in;
+  padding: 0.75in;
   overflow: hidden;
-  font-family: 'Exo', sans-serif;
+  background: #fff;
+  font-family: "Exo", sans-serif;
 }
 
 /* HEADER */
 
 header {
-  display: block;
   padding-bottom: 10px;
+  margin-bottom: 10px;
   border-bottom: 2px solid #000;
 }
 
 header .name {
-  display: block;
   float: left;
   font-size: 32px;
   font-weight: bold;
 }
 
-header ul {
-  display: block;
-  float: right;
+header .contact,
+header .social {
   font-size: 12px;
-  margin-left: 12px;
+}
+
+header .contact {
+  float: left;
+  clear: left;
+}
+
+header .social {
+  float: right;
 }
 
 /* MAIN */
 
-main {
-  display: block;
-}
-
-main > section {
-  display: block;
-  margin-top: 15px;
+main section {
+  margin-bottom: 15px;
 }
 
 section > h2 {
-  display: block;
   font-size: 18px;
   font-weight: bold;
   border-bottom: 1px solid #000;
@@ -104,145 +126,132 @@ section > h2 {
   text-transform: uppercase;
 }
 
-/* EDUCATION */
+/* SUMMARY */
 
-section.education > .institution {
-  display: block;
-  margin-bottom: 10px;
+.summary {
+  font-size: 12px;
 }
 
-section.education > .institution > .name {
-  display: block;
-  float: left;
-  margin-bottom: 5px;
-  font-size: 16px;
+/* TECHNOLOGIES */
+
+.technologies .technologies-list {
+  font-size: 12px;
+}
+
+.technologies .category {
   font-weight: bold;
-}
-
-section.education .institution .right-col {
-  float: right;
-  text-align: right;
-}
-
-section.education .institution .duration {
-  font-size: 12px;
-}
-
-section.education > .institution .location {
-  font-size: 12px;
-}
-
-section.education > .institution > .description {
-  float: left;
-  margin-left: 10px;
-  padding-top: 2px;
-  font-size: 14px;
-  font-style: italic;
-}
-
-section.education > .institution ul > li {
-  list-style: square inside;
-  font-size: 12px;
 }
 
 /* WORK EXPERIENCE */
 
-section.work > .job {
-  display: block;
-  margin-bottom: 10px;
+.work .job {
+  margin-top: 10px;
 }
 
-section.work > .job:last-child {
-  margin-bottom: 0;
-}
-
-section.work > .job .left-col {
+.work .employer,
+.work .description {
   float: left;
 }
 
-section.work > .job .right-col {
-  text-align: right;
+.work .duration,
+.work .location {
   float: right;
+  clear: right;
+  font-size: 12px;
 }
 
-section.work > .job .employer {
-  float: left;
+.work .employer {
   font-size: 16px;
   font-weight: bold;
+  margin-right: 10px;
 }
 
-section.work > .job .location {
-  font-size: 12px;
-}
-
-section.work > .job .description {
-  float: left;
-  margin-left: 10px;
-  padding-top: 2px;
+.work .description {
   font-size: 14px;
   font-style: italic;
+  line-height: 1.5;
 }
 
-section.work > .job .duration {
-  font-size: 12px;
-}
-
-section.work > .job .project {
+.work .project {
   clear: left;
   font-size: 14px;
 }
 
-section.work > .job > ul.responsibilities > li {
+.work .responsibilities li {
   clear: left;
   list-style: square;
   font-size: 12px;
   margin-left: 16px;
 }
 
-/* TECHNOLOGIES */
-
-section.technologies .technology {
-  font-size: 12px;
-  display: inline;
-}
-
-
-section.technologies .technologies-list {
-  text-align: center;
-}
-
-section.technologies .technology:not(:first-child):before {
-  content: '• ';
-}
-
 /* PROJECTS */
 
-section.projects > .project {
-  display: block;
-  margin-bottom: 15px;
+.projects .project {
+  margin-bottom: 10px;
 }
 
-section.projects > .project > .project-title {
+.projects .project-title {
   font-size: 16px;
   font-weight: bold;
   float: left;
+  margin-right: 10px;
 }
 
-section.projects > .project > .project-description {
+.projects .link,
+.projects .print-only-link {
+  float: left;
+  font-size: 14px;
+}
+
+.projects .stack {
+  font-weight: bold;
+}
+
+.projects .technologies {
+  clear: left;
+  font-size: 12px;
+}
+
+.projects .project-description {
   font-size: 12px;
   clear: both;
 }
 
-section.projects > .project .project-link {
+/* EDUCATION */
+
+.education .institution {
+  margin-top: 10px;
+}
+
+.education .name,
+.education .description {
+  float: left;
+}
+
+.education .name {
+  float: left;
+  font-size: 16px;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.education .description {
+  font-size: 14px;
+  font-style: italic;
+  line-height: 1.5;
+}
+
+.education .location,
+.education .duration {
+  float: right;
+  clear: right;
+  text-align: right;
+}
+
+.education .institution .duration {
   font-size: 12px;
 }
 
-section.projects > .project .link-container {
-  float: left;
-  margin-left: 1em;
-}
-
-section.projects > .project .print-only {
-  float: left;
-  margin-left: 1em;
+.education .institution .location {
+  font-size: 12px;
 }
